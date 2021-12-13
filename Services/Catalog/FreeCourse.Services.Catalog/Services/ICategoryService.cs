@@ -7,7 +7,7 @@ namespace FreeCourse.Services.Catalog.Services
     internal interface ICategoryService
     {
         internal Task<Response<List<CategoryDto>>> GetAllAsync();
-        internal Task<Response<CategoryDto>> CreateAsync(Category category);
+        internal Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);
         internal Task<Response<CategoryDto>> GetByIdAsync(string id);
     }
 }
