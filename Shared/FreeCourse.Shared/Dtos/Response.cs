@@ -49,7 +49,7 @@ namespace FreeCourse.Shared.Dtos
         {
             return new Response<T>
             {
-                Errors = { error },
+                Errors = new List<string> { error },
                 StatusCode = statusCode,
                 IsSuccessful = false
             };

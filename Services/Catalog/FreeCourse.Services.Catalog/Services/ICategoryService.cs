@@ -4,10 +4,10 @@ using FreeCourse.Shared.Dtos;
 
 namespace FreeCourse.Services.Catalog.Services
 {
-    internal interface ICategoryService
+    public interface ICategoryService
     {
-        internal Task<Response<List<CategoryDto>>> GetAllAsync();
-        internal Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);
-        internal Task<Response<CategoryDto>> GetByIdAsync(string id);
+        public Task<Response<List<CategoryDto>>> GetAllAsync();
+        public Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto);
+        public Task<Response<CategoryDto>> GetByIdAsync(string id);
     }
 }
