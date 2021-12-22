@@ -3,13 +3,13 @@ using FreeCourse.Shared.Dtos;
 
 namespace FreeCourse.Services.Catalog.Services
 {
-    internal interface ICourseService
+    public interface ICourseService
     {
-        internal Task<Response<List<CourseDto>>> GetAllAsync();
-        internal Task<Response<CourseDto>> CreateAsync(CourseCreateDto courseCreateDto);
-        internal Task<Response<NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto);
-        internal Task<Response<NoContent>> DeleteAsync(string id);
-        internal Task<Response<CourseDto>> GetByIdAsync(string id);
-        internal Task<Response<List<CourseDto>>> GetAllByUserIdAsync(string userId);
+        public Task<Response<List<CourseDto>>> GetAllAsync();
+        public Task<Response<CourseDto>> CreateAsync(CourseCreateDto courseCreateDto);
+        public Task<Response<NoContent>> UpdateAsync(CourseUpdateDto courseUpdateDto);
+        public Task<Response<NoContent>> DeleteAsync(string id);
+        public Task<Response<CourseDto>> GetByIdAsync(string id);
+        public Task<Response<List<CourseDto>>> GetAllByUserIdAsync(string userId);
     }
 }
