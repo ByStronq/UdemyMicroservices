@@ -1,0 +1,10 @@
+# UdemyMicroservices
+
+## Ports
+
+- Services
+	- catalogAPI => 5011
+	- photoStockAPI => 5012
+	- basketAPI => 5013
+	- discountAPI => 5014
+- identityServer => 5001
